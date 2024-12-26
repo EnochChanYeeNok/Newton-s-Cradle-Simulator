@@ -1,47 +1,77 @@
+/* styles.css */
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  
-  h1 {
-    margin-top: 20px;
-  }
-  
-  #cradle {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    border: 1px solid #ddd;
-    margin: 0 auto;
-    overflow: hidden; /* Hide anything above or outside the boundary */
-    background: #f9f9f9;
-  }
-  
-  .pivot {
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    width: 300px;    /* The "bar" width for illustration */
-    height: 4px;
-    background: #333;
-    transform: translateX(-50%);
-  }
-  
-  .ball-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  .ball {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: #555;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+#pendulumCanvas {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+#controls {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+  max-width: 800px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+input[type="range"],
+input[type="number"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 5px 5px 5px 0;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.global-settings {
+  margin-top: 20px;
+}
+
+.global-settings label {
+  display: block;
+  margin: 5px 0 2px;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+}
+
+.remove-btn:hover {
+  background-color: #a71d2a;
+}
