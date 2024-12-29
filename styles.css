@@ -20,6 +20,12 @@ body {
   text-align: left;
   margin-top: 20px;
   max-width: 800px;
+  text-align: center; /* Center align the content */
+}
+
+#controls button {
+  display: inline-block; /* Ensure buttons are inline */
+  margin: 5px 10px; /* Adjust margins for spacing */
 }
 
 table {
@@ -74,4 +80,18 @@ button:hover {
 
 .remove-btn:hover {
   background-color: #a71d2a;
+}
+
+/* Trail Option Styling */
+.trail-option {
+  margin-top: 20px;
+}
+
+.trail-option label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.trail-option input[type="checkbox"] {
+  margin-right: 5px;
 }
